@@ -232,7 +232,7 @@ InitEpsmSafeWriteRam:
   LDA dEpsmSafeWriteData,Y
   STA $01,Y
   DEY
-  BNE -
+  BPL -
 
   LDA #$60
   STA $08
